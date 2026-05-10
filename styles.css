@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.nav1 {
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: slateblue;
+}
+
+.logo {
+  width: 100px;
+}
+
+.menu-search {
+  display: flex;
+  /* gap: 10px; */
+  /* background-color: salmon; */
+}
+
+.menu-search i {
+  font-size: 20px;
+  /* background-color: saddlebrown; */
+  border-left: 2px solid rgb(218, 212, 212);
+  padding: 13px 15px;
+}
+
+.fa-bars {
+  color: rgb(241, 112, 89);
+}
+
+.nav1-search {
+  color: rgb(196, 193, 193);
+}
+
+.yello-nav {
+  background-color: violet;
+  background-color: yellow;
+  padding: 15px;
+  font-size: 8px;
+  text-align: center;
+  margin-top: -4px;
+}
+
+.nav2 {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .nav1 {
+    display: none;
+  }
+
+  .nav2 {
+    display: block;
+    background-color: black;
+  }
+
+  .nav2-first {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4px 0;
+    margin: 0 auto;
+    width: 97%;
+  }
+
+  .nav2-ful,
+  .nav2-sul {
+    display: flex;
+    gap: 10px;
+    /* background-color: saddlebrown; */
+  }
+
+  .nav2-ful li,
+  .nav2-sul li {
+    list-style: none;
+  }
+
+  .nav2-ful a,
+  .nav2-sul a {
+    text-decoration: none;
+    font-size: 14px;
+    color: rgb(196, 193, 193);
+  }
+
+  .nav2-second {
+    background-color: white;
+  }
+
+  .nav2-secul {
+    display: flex;
+    gap: 10px;
+  }
+
+  .nav2-secul li {
+    list-style: none;
+  }
+
+  .nav2-secul a {
+    text-decoration: none;
+    font-size: 14px;
+    color: rgb(196, 193, 193);
+  }
+
+  .nav2-second .test {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    width: 97%;
+    color: rgb(196, 193, 193);
+  }
+
+  .sech2 {
+    padding: 10px 0 10px 20px;
+    border-left: 2px solid rgb(218, 212, 212);
+  }
+
+  .nav2-yello {
+    background-color: yellow;
+    font-size: 10px;
+    padding: 4px 0;
+  }
+
+  .nav2-yello h3 {
+    margin: 0 auto;
+    width: 97%;
+  }
+}
