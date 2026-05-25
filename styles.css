@@ -55,6 +55,42 @@
   display: none;
 }
 
+.highlights {
+  display: grid;
+  gap: 10px;
+  /* padding: 0 0 5px; */
+  /* background-color: salmon; */
+}
+
+.highlight1 {
+  background-image:
+    linear-gradient(to bottom, rgba(128, 128, 128, 0.35), rgba(0, 0, 0, 0.95)),
+    url(./Image/Opal-cut.jpg);
+}
+
+.highlight2 {
+  background-image:
+    linear-gradient(to bottom, rgba(128, 128, 128, 0.35), rgba(0, 0, 0, 0.95)),
+    url(./Image/AI-security.png);
+  margin: 5px 0;
+}
+
+.highlight3 {
+  background-image:
+    linear-gradient(to bottom, rgba(128, 128, 128, 0.35), rgba(0, 0, 0, 0.95)),
+    url(./Image/detect.jpg);
+}
+
+.highlight1,
+.highlight2,
+.highlight3 {
+  min-height: 305px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin: 0 10px;
+}
+
 @media (min-width: 768px) {
   .nav1 {
     display: none;
