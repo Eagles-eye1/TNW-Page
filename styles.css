@@ -89,6 +89,38 @@
   background-size: cover;
   background-position: center;
   margin: 0 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 15px;
+}
+
+.highlight1 h2,
+.highlight2 h2,
+.highlight3 h2 {
+  color: white;
+  font-weight: 900;
+  font-size: 22px;
+}
+
+.highlight1 p,
+.highlight2 p,
+.highlight3 p {
+  color: rgb(196, 191, 191);
+}
+
+.highlight1 span,
+.highlight2 span,
+.highlight3 span {
+  display: flex;
+  gap: 10px;
+  padding: 5px 0;
+}
+
+.highlight1 p i,
+.highlight2 p i,
+.highlight3 p i {
+  margin-right: 5px;
 }
 
 @media (min-width: 768px) {
