@@ -71,14 +71,6 @@ body {
     margin-bottom: 0;
 }
 
-.funding-card-row {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(240px, 1fr));
-    gap: 24px;
-    max-width: 535px;
-    margin: 0 0 0;
-}
-
 .funding-card-header {
     position: relative;
     min-height: 72px;
@@ -237,60 +229,6 @@ body {
     color: #b5b5b5;
 }
 
-.funding-card-compact {
-    margin-bottom: 0;
-}
-
-.funding-card-compact .funding-card-header {
-    min-height: 38px;
-    padding: 9px 14px 8px 82px;
-}
-
-.funding-card-compact .company-logo {
-    left: 10px;
-    top: 10px;
-    width: 58px;
-    height: 58px;
-}
-
-.funding-card-compact .funding-card-header h2 {
-    font-size: 16px;
-}
-
-.funding-card-compact .funding-amount {
-    min-height: 56px;
-    padding: 12px 14px 10px 82px;
-}
-
-.funding-card-compact .funding-amount p {
-    font-size: 16px;
-}
-
-.funding-card-compact .funding-amount span {
-    font-size: 11px;
-}
-
-.funding-card-compact .funding-meta {
-    gap: 12px;
-    padding: 17px 16px 16px;
-}
-
-.funding-card-compact .funding-meta p {
-    gap: 10px;
-    font-size: 13px;
-}
-
-.funding-card-compact .funding-meta i {
-    width: 16px;
-    font-size: 15px;
-}
-
-.funding-card-compact .funding-story {
-    min-height: 88px;
-    padding: 13px 16px 17px;
-    font-size: 13px;
-}
-
 .site-footer {
     margin: 35px 10px 0;
     color: #aaa;
@@ -444,11 +382,6 @@ body {
 
     .funding-amount {
         padding-left: 114px;
-    }
-
-    .funding-card-row {
-        grid-template-columns: 1fr;
-        max-width: none;
     }
 
     .site-footer {
