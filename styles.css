@@ -123,6 +123,20 @@
   margin-right: 5px;
 }
 
+.phone-access {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  color: white;
+  background-color: rgb(9, 55, 182);
+  width: 40px;
+  height: 40px;
+  position: fixed;
+  bottom: -5px;
+  right: 10px;
+}
+
 @media (min-width: 768px) {
   .nav1 {
     display: none;
