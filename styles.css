@@ -10,12 +10,13 @@ body {
 }
 
 .funding-section {
-    max-width: 1120px;
+    max-width: 1200px;
     margin: 0 auto;
-    padding: 0 26px;
+    padding: 0 36px;
 }
 
 .section-kicker {
+    display: none;
     margin: 0 0 30px;
     color: #000;
     font-size: 36px;
@@ -24,35 +25,51 @@ body {
 }
 
 .funding-panel {
-    padding: 18px 25px 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px;
+    padding: 18px 8px 26px;
     background: linear-gradient(180deg, #f7f7f7 0, #fff 58px);
+    border-bottom: 3px solid #e5e5e5;
+}
+
+.funding-heading-row {
+    display: grid;
+    gap: 18px;
 }
 
 .funding-heading-row h1 {
-    margin: 0 0 24px;
+    margin: 0;
     color: #ff3d28;
-    font-size: 43px;
+    font-size: 30px;
     font-weight: 800;
     line-height: 1.15;
 }
 
 .funding-heading-row h1 i {
     margin-left: 8px;
-    font-size: 32px;
-    vertical-align: 3px;
+    font-size: 18px;
+    vertical-align: 2px;
 }
 
 .funding-links {
-    display: grid;
-    gap: 22px;
-    margin: 0 0 42px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 14px;
+    margin: 0;
     padding: 0;
     list-style: none;
 }
 
+.funding-links li:not(:last-child)::after {
+    content: "|";
+    margin-left: 14px;
+    color: #ff3d28;
+}
+
 .funding-links a {
     color: #ff3d28;
-    font-size: 23px;
+    font-size: 16px;
     line-height: 1;
     text-decoration: none;
 }
@@ -62,8 +79,8 @@ body {
 }
 
 .funding-card {
-    max-width: 1075px;
-    margin: 0 auto 32px;
+    max-width: none;
+    margin: 0;
     background: #fff9f8;
 }
 
@@ -73,19 +90,19 @@ body {
 
 .funding-card-header {
     position: relative;
-    min-height: 72px;
-    padding: 18px 24px 18px 140px;
+    min-height: 38px;
+    padding: 11px 12px 10px 82px;
     background: #ff3d28;
 }
 
 .company-logo {
     position: absolute;
-    left: 18px;
-    top: 18px;
+    left: 12px;
+    top: 10px;
     display: grid;
     place-items: center;
-    width: 100px;
-    height: 100px;
+    width: 58px;
+    height: 58px;
     background: #315178;
     color: #fff;
     overflow: hidden;
@@ -93,16 +110,16 @@ body {
 
 .ringover-mark {
     color: #43d6cf;
-    font-size: 68px;
+    font-size: 40px;
     font-weight: 900;
     line-height: 0.7;
     transform: rotate(90deg);
 }
 
 .ringover-name {
-    margin-top: -8px;
+    margin-top: -5px;
     color: #fff;
-    font-size: 18px;
+    font-size: 10px;
     font-weight: 700;
 }
 
@@ -111,33 +128,11 @@ body {
     border: 1px solid #f1f1f1;
 }
 
-.swiss-mark {
-    color: #30373b;
-    font-size: 44px;
-    font-weight: 800;
-    line-height: 1;
-    letter-spacing: -5px;
-}
-
-.swiss-mark::after {
-    content: "";
-    display: inline-block;
-    width: 10px;
-    height: 10px;
-    margin-left: 5px;
-    border-radius: 50%;
-    background: #ff3d28;
-    vertical-align: middle;
-}
-
-.swiss-name {
-    color: #3d3d3d;
-    font-size: 11px;
-    font-weight: 800;
-}
-
-.swiss-name::first-letter {
-    color: #ff3d28;
+.swiss-logo img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
 }
 
 .klook-logo {
@@ -164,65 +159,65 @@ body {
 .funding-card-header h2 {
     margin: 0;
     color: #fff;
-    font-size: 30px;
+    font-size: 16px;
     font-weight: 800;
     line-height: 1.2;
 }
 
 .funding-amount {
-    min-height: 100px;
-    padding: 20px 24px 18px 138px;
+    min-height: 56px;
+    padding: 12px 12px 10px 82px;
     background: #ffe9e6;
 }
 
 .funding-amount p {
     margin: 0;
     color: #000;
-    font-size: 30px;
+    font-size: 16px;
     font-weight: 800;
     line-height: 1;
 }
 
 .funding-amount span {
     display: block;
-    margin-top: 5px;
+    margin-top: 4px;
     color: #8d817f;
-    font-size: 17px;
+    font-size: 11px;
     font-weight: 700;
     letter-spacing: 0.03em;
 }
 
 .funding-meta {
     display: grid;
-    gap: 20px;
-    padding: 29px 26px 30px;
+    gap: 12px;
+    padding: 20px 14px 22px;
     background: #fff9f8;
 }
 
 .funding-meta p {
     display: flex;
     align-items: center;
-    gap: 18px;
+    gap: 10px;
     margin: 0;
     color: #686868;
-    font-size: 23px;
+    font-size: 13px;
     line-height: 1.1;
 }
 
 .funding-meta i {
-    width: 26px;
+    width: 16px;
     color: #1d1d1d;
-    font-size: 23px;
+    font-size: 15px;
     text-align: center;
 }
 
 .funding-story {
     margin: 0;
-    padding: 19px 26px 27px;
-    border-top: 2px solid #ffd1ca;
+    padding: 12px 14px 16px;
+    border-top: 1px solid #ffd1ca;
     color: #666;
-    font-size: 20px;
-    line-height: 1.35;
+    font-size: 12px;
+    line-height: 1.55;
 }
 
 .funding-story span {
@@ -230,6 +225,7 @@ body {
 }
 
 .site-footer {
+    position: relative;
     margin: 35px 10px 0;
     color: #aaa;
     text-align: center;
@@ -317,9 +313,9 @@ body {
 }
 
 .accessibility-button {
-    position: fixed;
-    right: 24px;
-    bottom: 20px;
+    position: absolute;
+    right: 18px;
+    bottom: 18px;
     display: grid;
     width: 42px;
     height: 42px;
@@ -334,6 +330,48 @@ body {
 
 .accessibility-button i {
     font-size: 24px;
+}
+
+@media (min-width: 700px) {
+    .funding-panel {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .funding-heading-row {
+        grid-column: 1 / -1;
+    }
+}
+
+@media (min-width: 1024px) {
+    .funding-panel {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 24px;
+        padding: 18px 20px 26px 8px;
+        border-right: 1px solid #e2e2e2;
+    }
+
+    .funding-heading-row {
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+        gap: 24px;
+    }
+
+    .funding-heading-row h1 {
+        font-size: 24px;
+        white-space: nowrap;
+    }
+
+    .funding-links {
+        justify-content: flex-end;
+        flex: 1 1 auto;
+    }
+}
+
+@media (max-width: 899px) {
+    .footer-bottom {
+        padding-right: 72px;
+    }
 }
 
 @media (max-width: 640px) {
