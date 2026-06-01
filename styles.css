@@ -299,11 +299,10 @@ body {
 }
 
 .footer-logo {
-    color: #fff;
-    font-size: 13px;
-    font-weight: 900;
-    font-style: italic;
-    letter-spacing: -1px;
+    display: block;
+    width: 48px;
+    height: auto;
+    filter: invert(1);
 }
 
 .footer-copy strong {
@@ -332,6 +331,11 @@ body {
     font-size: 24px;
 }
 
+
+/* RESPONSIVE STYLES */
+
+/* Media query for medium screens, such as tablets and small laptops */
+
 @media (min-width: 700px) {
     .funding-panel {
         grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -342,7 +346,21 @@ body {
     }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 700px) and (max-width: 1024px) {
+    .funding-panel {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 1024px) {
+    .wolt-card {
+        display: none;
+    }
+}
+
+/* Media query for larger screens, such as desktops and laptops */
+
+@media (min-width: 1025px) {
     .funding-panel {
         grid-template-columns: repeat(4, minmax(0, 1fr));
         gap: 24px;
@@ -368,11 +386,14 @@ body {
     }
 }
 
+/* Media query for small screens, such as mobile devices */
+
 @media (max-width: 899px) {
     .footer-bottom {
         padding-right: 72px;
     }
 }
+
 
 @media (max-width: 640px) {
     .funding-section {
