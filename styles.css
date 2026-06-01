@@ -51,15 +51,13 @@
   margin-top: -4px;
 }
 
-.nav2 {
+.large-screen {
   display: none;
 }
 
-.highlights {
+.highlights-1 {
   display: grid;
   gap: 10px;
-  /* padding: 0 0 5px; */
-  /* background-color: salmon; */
 }
 
 .highlight1 {
@@ -138,11 +136,11 @@
 }
 
 @media (min-width: 768px) {
-  .nav1 {
+  .phone {
     display: none;
   }
 
-  .nav2 {
+  .large-screen {
     display: block;
     background-color: black;
   }
@@ -160,7 +158,6 @@
   .nav2-sul {
     display: flex;
     gap: 10px;
-    /* background-color: saddlebrown; */
   }
 
   .nav2-ful li,
@@ -217,5 +214,64 @@
   .nav2-yello h3 {
     margin: 0 auto;
     width: 97%;
+  }
+
+  .highlights-2 {
+    background-color: white;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-areas:
+      "highlight1 highlight2"
+      "highlight1 highlight3";
+    grid-template-rows: 1fr 1fr;
+    height: calc(100vh - 90px);
+    gap: 10px;
+    padding: 5px 10px 0;
+  }
+
+  .highlight1 {
+    grid-area: highlight1;
+  }
+
+  .highlight2 {
+    grid-area: highlight2;
+  }
+
+  .highlight3 {
+    grid-area: highlight3;
+  }
+
+  .highlight1,
+  .highlight2,
+  .highlight3 {
+    min-height: 0;
+    margin: 0;
+  }
+
+  .large-access {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    color: white;
+    background-color: rgb(9, 55, 182);
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    bottom: 5px;
+    right: 10px;
+  }
+}
+
+@media (min-width: 992px) {
+  .highlight1 {
+    background-image:
+      linear-gradient(to right, rgba(255, 0, 0, 0.55), rgba(255, 0, 0, 0)),
+      linear-gradient(
+        to bottom,
+        rgba(128, 128, 128, 0.35),
+        rgba(0, 0, 0, 0.95)
+      ),
+      url("./Image/Opal-cut.jpg");
   }
 }
