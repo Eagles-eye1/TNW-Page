@@ -82,6 +82,7 @@
 .highlight1,
 .highlight2,
 .highlight3 {
+  position: relative;
   min-height: 305px;
   background-repeat: no-repeat;
   background-size: cover;
@@ -91,6 +92,15 @@
   flex-direction: column;
   justify-content: flex-end;
   padding: 15px;
+}
+
+.highlight-logo {
+  display: none;
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  width: 120px;
+  filter: invert(1);
 }
 
 .highlight1 h2,
@@ -273,5 +283,12 @@
         rgba(0, 0, 0, 0.95)
       ),
       url("./Image/Opal-cut.jpg");
+  }
+
+  .highlights-2 .highlight1 .highlight-logo {
+    display: block;
+    width: 180px;
+    top: 20px;
+    left: 20px;
   }
 }
