@@ -103,7 +103,12 @@
   filter: invert(1);
 }
 
-.highlight1 h2,
+.highlight1 h2 {
+  color: white;
+  font-weight: 900;
+  font-size: 45px;
+}
+
 .highlight2 h2,
 .highlight3 h2 {
   color: white;
@@ -143,6 +148,11 @@
   position: fixed;
   bottom: -5px;
   right: 10px;
+}
+
+.large-date {
+  display: none;
+  position: relative;
 }
 
 @media (min-width: 768px) {
@@ -273,7 +283,7 @@
   }
 }
 
-@media (min-width: 992px) {
+@media (min-width: 1024px) {
   .highlight1 {
     background-image:
       linear-gradient(to right, rgba(255, 0, 0, 0.55), rgba(255, 0, 0, 0)),
@@ -287,8 +297,28 @@
 
   .highlights-2 .highlight1 .highlight-logo {
     display: block;
-    width: 180px;
+    position: static;
+    width: clamp(220px, 30vw, 500px);
+    flex-shrink: 1;
+  }
+
+  .highlight1-overlay {
+    position: absolute;
     top: 20px;
     left: 20px;
+    right: 20px;
+    height: auto;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 24px;
+  }
+
+  .large-date {
+    display: block;
+    position: static;
+    flex-shrink: 0;
   }
 }
