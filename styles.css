@@ -103,12 +103,7 @@
   filter: invert(1);
 }
 
-.highlight1 h2 {
-  color: white;
-  font-weight: 900;
-  font-size: 45px;
-}
-
+.highlight1 h2,
 .highlight2 h2,
 .highlight3 h2 {
   color: white;
@@ -281,6 +276,10 @@
     bottom: 5px;
     right: 10px;
   }
+
+  .highlight1 h2 {
+    font-size: clamp(24px, 3vw, 45px);
+  }
 }
 
 @media (min-width: 1024px) {
@@ -320,5 +319,9 @@
     display: block;
     position: static;
     flex-shrink: 0;
+  }
+
+  .highlight1 h2 {
+    font-size: clamp(24px, 3vw, 45px);
   }
 }
