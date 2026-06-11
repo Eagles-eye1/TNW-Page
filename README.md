@@ -2,6 +2,8 @@
 
 A responsive static landing page inspired by The Next Web (TNW). The project recreates a news-style homepage experience with mobile and desktop navigation, featured story cards, a latest funding section, and a branded footer.
 
+[View the live site](https://eagles-eye1.github.io/TNW-Page/)
+
 ## Overview
 
 TNW Site is built with plain HTML and CSS. It focuses on responsive layout, visual hierarchy, image-led story cards, and a funding-round section modeled after TNW-style editorial pages.
@@ -132,4 +134,3 @@ Recent work represented in the repository includes:
 - Keep the site usable without a JavaScript build process unless the project intentionally changes direction.
 - When adding new pages or sections, update this README so the project documentation stays aligned with the site.
 - If package-based tooling is introduced later, add setup, install, and script instructions here.
-
