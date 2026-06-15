@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320" role="img" aria-label="Meme generator illustration">
+  <defs>
+    <radialGradient id="warm" cx=".22" cy=".18" r=".9">
+      <stop offset="0" stop-color="#b92128"/>
+      <stop offset=".55" stop-color="#703025"/>
+      <stop offset="1" stop-color="#241c1b"/>
+    </radialGradient>
+  </defs>
+  <rect width="640" height="320" fill="url(#warm)"/>
+  <rect x="322" y="55" width="198" height="188" rx="8" fill="#2d2928" opacity=".75"/>
+  <rect x="342" y="78" width="158" height="122" rx="4" fill="#efdfbf"/>
+  <circle cx="421" cy="116" r="24" fill="#f0c99e"/>
+  <path d="M382 194 C390 155 452 154 462 194 Z" fill="#6d4634"/>
+  <path d="M394 145 C418 164 441 164 459 146" fill="none" stroke="#563627" stroke-width="16" stroke-linecap="round"/>
+  <rect x="137" y="34" width="170" height="228" rx="12" fill="#d9c6a5"/>
+  <circle cx="221" cy="101" r="47" fill="#e8caa6"/>
+  <path d="M179 96 C181 47 259 44 266 96 C250 79 202 76 179 96Z" fill="#eee3ce"/>
+  <path d="M157 155 C177 131 270 129 292 155 L267 261 L182 261Z" fill="#b31d26"/>
+  <path d="M186 168 C207 189 251 189 272 168" fill="none" stroke="#f0d7b5" stroke-width="18" stroke-linecap="round"/>
+  <path d="M304 144 L374 125 L382 148 L310 175Z" fill="#b31d26"/>
+  <rect x="363" y="111" width="42" height="52" rx="10" fill="#202729"/>
+  <circle cx="384" cy="104" r="17" fill="#97ced7"/>
+  <path d="M369 102 L399 110" stroke="#eef8fa" stroke-width="5"/>
+</svg>

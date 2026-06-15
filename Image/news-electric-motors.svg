@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320" role="img" aria-label="Earth and electric motor factory transition">
+  <defs>
+    <radialGradient id="earth" cx=".38" cy=".36" r=".66">
+      <stop offset="0" stop-color="#d9fff4"/>
+      <stop offset=".4" stop-color="#277ccd"/>
+      <stop offset=".72" stop-color="#113a7c"/>
+      <stop offset="1" stop-color="#07111f"/>
+    </radialGradient>
+    <linearGradient id="space" x1="0" x2="1">
+      <stop offset="0" stop-color="#05070d"/>
+      <stop offset="1" stop-color="#131923"/>
+    </linearGradient>
+  </defs>
+  <rect width="640" height="320" fill="url(#space)"/>
+  <circle cx="240" cy="164" r="135" fill="url(#earth)"/>
+  <path d="M124 123 C174 93 199 119 235 102 C277 82 310 112 343 98 C306 35 211 10 145 53 C113 75 91 111 83 151 C99 145 110 134 124 123Z" fill="#71c56a"/>
+  <path d="M146 228 C184 204 216 243 250 222 C287 199 319 217 348 203 C324 261 250 306 181 281 C159 273 139 260 122 242Z" fill="#59ad57"/>
+  <path d="M103 178 C155 196 191 174 240 194 C294 216 334 189 371 211" fill="none" stroke="#fff" stroke-width="8" opacity=".55"/>
+  <g transform="translate(410 83)">
+    <rect x="34" y="49" width="118" height="72" rx="8" fill="#d9dde1"/>
+    <circle cx="33" cy="85" r="33" fill="#c5cbd1"/>
+    <circle cx="153" cy="85" r="33" fill="#c5cbd1"/>
+    <circle cx="33" cy="85" r="13" fill="#7b8790"/>
+    <circle cx="153" cy="85" r="13" fill="#7b8790"/>
+    <path d="M92 49 L92 12 M92 121 L92 160 M42 35 L12 6 M142 35 L172 6" stroke="#eef1f4" stroke-width="9" stroke-linecap="round"/>
+  </g>
+  <path d="M18 167 C45 130 78 121 108 146" fill="none" stroke="#ffd7cf" stroke-width="38" stroke-linecap="round"/>
+</svg>
