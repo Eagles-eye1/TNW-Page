@@ -157,7 +157,16 @@ body {
 }
 
 .latest-news {
-    display: none;
+  display: block;
+  max-width: 1200px;
+  margin: 38px auto 0;
+  padding: 0 14px;
+}
+
+.latest-news-grid {
+  display: grid;
+  gap: 28px 22px;
+  grid-template-columns: 1fr;
 }
 
 .latest-news h1 {
