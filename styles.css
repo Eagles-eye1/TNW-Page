@@ -1,0 +1,327 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.nav1 {
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: slateblue;
+}
+
+.logo {
+  width: 100px;
+}
+
+.menu-search {
+  display: flex;
+  /* gap: 10px; */
+  /* background-color: salmon; */
+}
+
+.menu-search i {
+  font-size: 20px;
+  /* background-color: saddlebrown; */
+  border-left: 2px solid rgb(218, 212, 212);
+  padding: 13px 15px;
+}
+
+.fa-bars {
+  color: rgb(241, 112, 89);
+}
+
+.nav1-search {
+  color: rgb(196, 193, 193);
+}
+
+.yello-nav {
+  background-color: violet;
+  background-color: yellow;
+  padding: 15px;
+  font-size: 8px;
+  text-align: center;
+  margin-top: -4px;
+}
+
+.large-screen {
+  display: none;
+}
+
+.highlights-1 {
+  display: grid;
+  gap: 10px;
+}
+
+.highlight1 {
+  background-image:
+    linear-gradient(to bottom, rgba(128, 128, 128, 0.35), rgba(0, 0, 0, 0.95)),
+    url(./Image/Opal-cut.jpg);
+}
+
+.highlight2 {
+  background-image:
+    linear-gradient(to bottom, rgba(128, 128, 128, 0.35), rgba(0, 0, 0, 0.95)),
+    url(./Image/AI-security.png);
+  margin: 5px 0;
+}
+
+.highlight3 {
+  background-image:
+    linear-gradient(to bottom, rgba(128, 128, 128, 0.35), rgba(0, 0, 0, 0.95)),
+    url(./Image/detect.jpg);
+}
+
+.highlight1,
+.highlight2,
+.highlight3 {
+  position: relative;
+  min-height: 305px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin: 0 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 15px;
+}
+
+.highlight-logo {
+  display: none;
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  width: 120px;
+  filter: invert(1);
+}
+
+.highlight1 h2,
+.highlight2 h2,
+.highlight3 h2 {
+  color: white;
+  font-weight: 900;
+  font-size: 22px;
+}
+
+.highlight1 p,
+.highlight2 p,
+.highlight3 p {
+  color: rgb(196, 191, 191);
+}
+
+.highlight1 span,
+.highlight2 span,
+.highlight3 span {
+  display: flex;
+  gap: 10px;
+  padding: 5px 0;
+}
+
+.highlight1 p i,
+.highlight2 p i,
+.highlight3 p i {
+  margin-right: 5px;
+}
+
+.phone-access {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  color: white;
+  background-color: rgb(9, 55, 182);
+  width: 40px;
+  height: 40px;
+  position: fixed;
+  bottom: -5px;
+  right: 10px;
+}
+
+.large-date {
+  display: none;
+  position: relative;
+}
+
+@media (min-width: 768px) {
+  .phone {
+    display: none;
+  }
+
+  .large-screen {
+    display: block;
+    background-color: black;
+  }
+
+  .nav2-first {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4px 0;
+    margin: 0 auto;
+    width: 97%;
+  }
+
+  .nav2-ful,
+  .nav2-sul {
+    display: flex;
+    gap: 10px;
+  }
+
+  .nav2-ful li,
+  .nav2-sul li {
+    list-style: none;
+  }
+
+  .nav2-ful a,
+  .nav2-sul a {
+    text-decoration: none;
+    font-size: 14px;
+    color: rgb(196, 193, 193);
+  }
+
+  .nav2-second {
+    background-color: white;
+  }
+
+  .nav2-secul {
+    display: flex;
+    gap: 10px;
+  }
+
+  .nav2-secul li {
+    list-style: none;
+  }
+
+  .nav2-secul a {
+    text-decoration: none;
+    font-size: 14px;
+    color: rgb(196, 193, 193);
+  }
+
+  .nav2-second .test {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    width: 97%;
+    color: rgb(196, 193, 193);
+  }
+
+  .sech2 {
+    padding: 10px 0 10px 20px;
+    border-left: 2px solid rgb(218, 212, 212);
+  }
+
+  .nav2-yello {
+    background-color: yellow;
+    font-size: 10px;
+    padding: 4px 0;
+  }
+
+  .nav2-yello h3 {
+    margin: 0 auto;
+    width: 97%;
+  }
+
+  .highlights-2 {
+    background-color: white;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-areas:
+      "highlight1 highlight2"
+      "highlight1 highlight3";
+    grid-template-rows: 1fr 1fr;
+    height: calc(100vh - 90px);
+    gap: 10px;
+    padding: 5px 10px 0;
+  }
+
+  .highlight1 {
+    grid-area: highlight1;
+  }
+
+  .highlight2 {
+    grid-area: highlight2;
+  }
+
+  .highlight3 {
+    grid-area: highlight3;
+  }
+
+  .highlight1,
+  .highlight2,
+  .highlight3 {
+    min-height: 0;
+    margin: 0;
+  }
+
+  .large-access {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    color: white;
+    background-color: rgb(9, 55, 182);
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    bottom: 5px;
+    right: 10px;
+  }
+
+  .highlight1 h2 {
+    font-size: clamp(24px, 3vw, 45px);
+  }
+}
+
+@media (min-width: 1024px) {
+  .highlight1 {
+    background-image:
+      linear-gradient(to right, rgba(255, 0, 0, 0.55), rgba(255, 0, 0, 0)),
+      linear-gradient(
+        to bottom,
+        rgba(128, 128, 128, 0.35),
+        rgba(0, 0, 0, 0.95)
+      ),
+      url("./Image/Opal-cut.jpg");
+  }
+
+  .highlights-2 .highlight1 .highlight-logo {
+    display: block;
+    position: static;
+    width: clamp(220px, 30vw, 500px);
+    flex-shrink: 1;
+  }
+
+  .highlight1-overlay {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    height: auto;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 24px;
+  }
+
+  .large-date {
+    display: block;
+    position: static;
+    flex-shrink: 0;
+  }
+
+  .highlight1 h2 {
+    font-size: clamp(24px, 3vw, 45px);
+  }
+}
