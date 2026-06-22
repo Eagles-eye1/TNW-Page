@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320" role="img" aria-label="White electric cars on the Golden Gate Bridge">
+  <defs>
+    <linearGradient id="sky" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0" stop-color="#bde8ff"/>
+      <stop offset="0.58" stop-color="#f5d7aa"/>
+      <stop offset="1" stop-color="#8eb4c5"/>
+    </linearGradient>
+    <linearGradient id="road" x1="0" x2="1">
+      <stop offset="0" stop-color="#657985"/>
+      <stop offset="1" stop-color="#39474f"/>
+    </linearGradient>
+  </defs>
+  <rect width="640" height="320" fill="url(#sky)"/>
+  <path d="M0 180 C130 122 244 115 372 134 C466 148 553 129 640 103 L640 320 L0 320Z" fill="#88a7af"/>
+  <path d="M0 216 L640 178 L640 320 L0 320Z" fill="url(#road)"/>
+  <path d="M84 0 L84 210 M126 0 L126 210 M489 16 L489 191 M524 42 L524 190" stroke="#dd3c24" stroke-width="10"/>
+  <path d="M0 70 C130 6 246 -8 374 23 C477 48 555 19 640 3" fill="none" stroke="#dd3c24" stroke-width="7"/>
+  <g stroke="#b9281b" stroke-width="3">
+    <path d="M94 18 L7 199"/><path d="M114 13 L49 203"/><path d="M506 35 L414 198"/><path d="M518 48 L472 196"/>
+  </g>
+  <g transform="translate(96 214)">
+    <path d="M0 38 C18 10 56 0 111 4 C139 8 156 22 167 43 L153 54 L16 55Z" fill="#f6f9fb"/>
+    <path d="M58 8 L91 8 C111 11 127 20 137 35 L45 35Z" fill="#a8d8ef"/>
+    <circle cx="42" cy="55" r="17" fill="#111"/><circle cx="130" cy="55" r="17" fill="#111"/>
+  </g>
+  <g transform="translate(300 197) scale(.78)">
+    <path d="M0 38 C18 10 56 0 111 4 C139 8 156 22 167 43 L153 54 L16 55Z" fill="#f6f9fb"/>
+    <path d="M58 8 L91 8 C111 11 127 20 137 35 L45 35Z" fill="#a8d8ef"/>
+    <circle cx="42" cy="55" r="17" fill="#111"/><circle cx="130" cy="55" r="17" fill="#111"/>
+  </g>
+</svg>

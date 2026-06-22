@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320" role="img" aria-label="Bright star with a transiting exoplanet">
+  <defs>
+    <radialGradient id="sun" cx=".5" cy=".5" r=".5">
+      <stop offset="0" stop-color="#fff7a2"/>
+      <stop offset=".25" stop-color="#ffcf17"/>
+      <stop offset=".62" stop-color="#ff7500"/>
+      <stop offset="1" stop-color="#441000"/>
+    </radialGradient>
+    <filter id="glow" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="14" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="640" height="320" fill="#170905"/>
+  <circle cx="320" cy="160" r="122" fill="url(#sun)" filter="url(#glow)"/>
+  <g fill="none" stroke="#ff9a00" opacity=".42">
+    <circle cx="320" cy="160" r="93" stroke-width="5"/>
+    <path d="M223 112 C289 130 348 69 414 103" stroke-width="8"/>
+    <path d="M218 204 C278 171 345 238 420 195" stroke-width="7"/>
+  </g>
+  <circle cx="306" cy="160" r="35" fill="#050505"/>
+  <circle cx="232" cy="69" r="22" fill="#ff4b00" opacity=".8"/>
+  <circle cx="467" cy="248" r="28" fill="#ff6a00" opacity=".55"/>
+</svg>
