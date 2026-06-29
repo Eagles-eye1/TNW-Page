@@ -204,6 +204,50 @@ body {
   font-size: 13px;
 }
 
+.hardfork-latest {
+  margin: 0 10px;
+}
+
+.alibaba {
+  display: flex;
+  justify-content: space-between;
+  height: 120px;
+  margin-top: 5px;
+  background-color: rgb(391, 210, 210, 0.4);
+}
+
+.ali-img img {
+  height: 120px;
+  width: 110px;
+}
+
+.ali-text {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  color: rgb(245, 82, 18);
+  font-size: 12px;
+}
+
+.hardfork-twit {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.fone-period {
+  color: rgb(245, 82, 18);
+  font-size: 6px;
+  text-align: center;
+}
+
+.hardfork-twit h3 {
+  color: rgb(138, 123, 116);
+  font-size: 15px;
+  font-weight: 500;
+}
+
 .large-date {
   display: none;
   position: relative;
