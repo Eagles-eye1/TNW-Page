@@ -157,16 +157,54 @@ body {
   padding: 0 14px;
 }
 
+.appfork-phone,
+.gearfork-phone {
+  display: none;
+  max-width: 1200px;
+  margin: 38px auto 0;
+  padding: 0 14px;
+}
+
 .hardfork1 {
   background-image:
     linear-gradient(to bottom, rgba(128, 128, 128, 0.35), rgba(0, 0, 0, 0.95)),
     url("Image/GameStop.jpg");
-  min-height: 305px;
+  min-height: 240px;
   background-repeat: no-repeat;
   background-size: cover;
-  aspect-ratio: 16 / 7;
+  aspect-ratio: 16 / 10;
   background-position: center;
-  margin: 0 10px;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 20px;
+}
+.appfork1 {
+  background-image:
+    linear-gradient(to bottom, rgba(128, 128, 128, 0.35), rgba(0, 0, 0, 0.95)),
+    url("Image/googlemap.jpg");
+  min-height: 240px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  aspect-ratio: 16 / 10;
+  background-position: center;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 20px;
+}
+.gearfork1 {
+  background-image:
+    linear-gradient(to bottom, rgba(128, 128, 128, 0.35), rgba(0, 0, 0, 0.95)),
+    url("Image/macbook.jpg");
+  min-height: 240px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  aspect-ratio: 16 / 10;
+  background-position: center;
+  margin: 0;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -186,42 +224,59 @@ body {
   font-weight: 900;
 }
 
-.hardfork1 h2 {
+.hardfork1 h2,
+.appfork1 h2,
+.gearfork1 h2 {
   color: white;
   font-weight: 900;
   font-size: 25px;
   margin: 3px 0;
 }
 
-.hardfork1 h3 {
+.hardfork1 h3,
+.appfork1 h3,
+.gearfork1 h3 {
   color: white;
   font-weight: 300;
   font-size: 13px;
 }
 
-.hardfork1 p {
+.hardfork1 p,
+.appfork1 p,
+.gearfork1 p {
   color: rgb(196, 191, 191);
   font-size: 13px;
 }
 
 .hardfork-latest {
-  margin: 0 10px;
+  margin: 0;
 }
 
 .alibaba {
   display: flex;
   justify-content: space-between;
-  height: 120px;
+  min-height: 120px;
   margin-top: 5px;
-  background-color: rgb(391, 210, 210, 0.4);
+  background-color: rgba(255, 210, 210, 0.4);
+  overflow: hidden;
+}
+
+.ali-img {
+  flex: 0 0 min(34vw, 120px);
+  min-width: 96px;
 }
 
 .ali-img img {
-  height: 120px;
-  width: 110px;
+  display: block;
+  width: 100%;
+  height: 100%;
+  min-height: 120px;
+  object-fit: cover;
 }
 
 .ali-text {
+  flex: 1;
+  min-width: 0;
   padding: 20px;
   display: flex;
   flex-direction: column;
@@ -706,7 +761,7 @@ body {
   }
 
   .sech2 {
-    padding: 10px 0 10px 20px;
+    padding: 10px 0 10px 10px;
     border-left: 2px solid rgb(218, 212, 212);
   }
 
@@ -769,6 +824,32 @@ body {
 
   .highlight1 h2 {
     font-size: clamp(24px, 3vw, 45px);
+  }
+
+  /* .hardfork1 {
+    min-height: 305px;
+    aspect-ratio: 16 / 7;
+    margin: 0 10px;
+  }
+
+  .hardfork-latest {
+    margin: 0;
+  } */
+
+  .hardfork {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+    margin: 38px auto 0;
+    padding: 0 24px;
+  }
+
+  .appfork-phone,
+  .hardfork-phone {
+    display: block;
+    max-width: 500px;
+    margin: 0 auto 0;
+    padding: 0 5px;
   }
 
   .latest-news {
