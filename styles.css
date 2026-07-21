@@ -302,6 +302,12 @@ body {
   font-weight: 500;
 }
 
+hr {
+  border: none;
+  border-top: 1px solid rgb(245, 240, 240);
+  margin: 8px 0;
+}
+
 .large-date {
   display: none;
   position: relative;
@@ -1029,7 +1035,7 @@ body {
   }
 
   .hardfork-twit h3 {
-    font-size: 13px;
+    font-size: 14px;
   }
 
   .alibaba {
