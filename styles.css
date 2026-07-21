@@ -842,6 +842,36 @@ body {
     padding: 0;
   }
 
+  .hardfork1 h2,
+  .appfork1 h2,
+  .gearfork1 h2 {
+    font-size: 21px;
+  }
+
+  .hardfork1 h3,
+  .appfork1 h3,
+  .gearfork1 h3 {
+    font-size: 12px;
+  }
+
+  .hardfork1 p,
+  .appfork1 p,
+  .gearfork1 p {
+    font-size: 12px;
+  }
+
+  .ali-text {
+    font-size: 11px;
+  }
+
+  .hardfork-twit h3 {
+    font-size: 14px;
+  }
+
+  .alibaba {
+    height: 110px;
+  }
+
   .latest-news {
     display: block;
     max-width: 1200px;
@@ -949,6 +979,61 @@ body {
 
   .highlight1 h2 {
     font-size: clamp(24px, 3vw, 45px);
+  }
+
+  .hardfork {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    margin: 50px 80px;
+    padding: 0 24px;
+  }
+
+  .hardfork1,
+  .appfork1,
+  .gearfork1 {
+    padding: 15px;
+  }
+
+  .gearfork-phone,
+  .appfork-phone,
+  .hardfork-phone {
+    display: block;
+    width: 100%;
+    max-width: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .hardfork1 h2,
+  .appfork1 h2,
+  .gearfork1 h2 {
+    font-size: 19px;
+  }
+
+  .hardfork1 h3,
+  .appfork1 h3,
+  .gearfork1 h3 {
+    font-size: 11px;
+  }
+
+  .hardfork1 p,
+  .appfork1 p,
+  .gearfork1 p {
+    font-size: 11px;
+  }
+
+  .ali-text {
+    font-size: 9px;
+    padding: 15px;
+  }
+
+  .hardfork-twit h3 {
+    font-size: 13px;
+  }
+
+  .alibaba {
+    height: 110px;
   }
 
   .latest-news {
