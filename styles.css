@@ -28,15 +28,19 @@ body {
 
 .menu-search {
   display: flex;
-  /* gap: 10px; */
-  /* background-color: salmon; */
+}
+
+.menu-search .fa-bars,
+.menu-search .nav1-search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .menu-search i {
   font-size: 20px;
-  /* background-color: saddlebrown; */
   border-left: 2px solid rgb(218, 212, 212);
-  padding: 13px 15px;
+  padding: 13px 26px;
 }
 
 .fa-bars {
@@ -995,7 +999,7 @@ hr {
   }
 
   .sech2 {
-    padding: 10px 0 10px 20px;
+    padding: 10px 20px;
     border-left: 2px solid rgb(218, 212, 212);
   }
 
