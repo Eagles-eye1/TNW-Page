@@ -1281,6 +1281,8 @@ hr {
     min-height: 250px;
     aspect-ratio: 16 / 10;
     padding: 15px;
+    max-width: 900px;
+    width: 100%;
   }
 
   .gearfork-phone,
