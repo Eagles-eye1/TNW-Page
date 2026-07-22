@@ -140,20 +140,6 @@ body {
   margin-right: 5px;
 }
 
-.phone-access {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 25px;
-  color: white;
-  background-color: rgb(9, 55, 182);
-  width: 40px;
-  height: 40px;
-  position: fixed;
-  bottom: -5px;
-  right: 10px;
-}
-
 .hardfork-phone {
   display: block;
   max-width: 1200px;
@@ -914,7 +900,7 @@ hr {
 }
 
 .accessibility-button {
-  position: absolute;
+  position: fixed;
   right: 18px;
   bottom: 18px;
   display: grid;
@@ -923,7 +909,7 @@ hr {
   place-items: center;
   border: 0;
   border-radius: 50%;
-  background: #146ef5;
+  background: rgb(9, 55, 182);
   color: #fff;
   cursor: pointer;
   box-shadow: 0 8px 18px rgba(0, 0, 0, 0.28);
@@ -1066,11 +1052,13 @@ hr {
 
   .hardfork {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    align-items: start;
+    gap: 18px;
+    width: calc(100% - 48px);
     max-width: 1200px;
     margin: 38px auto 0;
-    padding: 0 24px;
+    padding: 0;
   }
 
   .appfork-phone,
@@ -1082,10 +1070,20 @@ hr {
     padding: 0;
   }
 
+  .hardfork1,
+  .appfork1 {
+    min-height: 250px;
+    aspect-ratio: 16 / 10;
+    padding: 15px;
+    max-width: 900px;
+    width: 100%;
+  }
+
   .hardfork1 h2,
   .appfork1 h2,
   .gearfork1 h2 {
-    font-size: 21px;
+    font-size: 20px;
+    line-height: 1.1;
   }
 
   .hardfork1 h3,
@@ -1102,14 +1100,35 @@ hr {
 
   .ali-text {
     font-size: 11px;
+    padding: 15px;
+  }
+
+  .ali-text h2 {
+    font-size: 15px;
+    line-height: 1.15;
+  }
+
+  .ali-img {
+    flex-basis: 108px;
+    min-width: 108px;
   }
 
   .hardfork-twit h3 {
     font-size: 14px;
+    line-height: 1.25;
   }
 
   .alibaba {
     height: 110px;
+  }
+
+  .ali-img img {
+    height: 110px;
+  }
+
+  .hardfork-twit {
+    align-items: flex-start;
+    margin-top: 10px;
   }
 
   .latest-news {
