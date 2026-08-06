@@ -33,7 +33,7 @@ $story-overlay: linear-gradient(
 $fork-feature-images: (
   hardfork1: "Image/GameStop.jpg",
   appfork1: "Image/googlemap.jpg",
-  gearfork1: "Image/macbook.jpg"
+  gearfork1: "Image/macbook.jpg",
 );
 
 // Sass mixin: keeps media query syntax reusable and lets sections nest breakpoints inside themselves.
@@ -305,15 +305,11 @@ body {
 }
 
 .hardfork-phone {
-  // Preprocessor: apply `fork-section-shell` mixin to give the hardfork
-  // phone card the shared max-width, margin and padding pattern.
   @include fork-section-shell(block);
 }
 
 .appfork-phone,
 .gearfork-phone {
-  // Preprocessor: reuse `fork-section-shell` to set default hidden state
-  // and consistent margins; we pass `none` to hide by default.
   @include fork-section-shell(none);
 }
 
