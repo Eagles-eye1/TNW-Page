@@ -28,6 +28,8 @@ $story-overlay: linear-gradient(
   rgba(0, 0, 0, 0.95)
 );
 // Sass map: stores related card image data in one place.
+// Preprocessor feature: `map` — a key/value collection used below
+// so we can loop and generate classes programmatically.
 $fork-feature-images: (
   hardfork1: "Image/GameStop.jpg",
   appfork1: "Image/googlemap.jpg",
@@ -45,6 +47,8 @@ $fork-feature-images: (
 }
 
 // Sass mixin: shared width/centering pattern for page sections.
+// Preprocessor feature: `mixin` — defines reusable blocks that accept
+// arguments. Use `@include content-section(...)` to apply these rules.
 @mixin content-section($top, $x-padding: 14px, $bottom: 0) {
   max-width: $max-content-width;
   margin: $top auto 0;
@@ -52,6 +56,8 @@ $fork-feature-images: (
 }
 
 // Sass mixin: repeated small icon offset used beside section titles.
+// Preprocessor feature: mixin for small utilities. Example usage:
+// `i { @include title-icon; }`
 @mixin title-icon($margin: 4px) {
   margin-left: $margin;
   font-size: 18px;
@@ -67,6 +73,8 @@ $fork-feature-images: (
 }
 
 // Sass mixin: repeated CSS grid card layouts.
+// Preprocessor feature: mixin with parameters to keep grid rules
+// consistent across multiple components.
 @mixin responsive-card-grid($columns, $gap: 28px 22px) {
   display: grid;
   grid-template-columns: repeat($columns, minmax(0, 1fr));
@@ -74,6 +82,8 @@ $fork-feature-images: (
 }
 
 // Sass mixin: hides cards beyond a numbered cutoff.
+// Preprocessor feature: mixin + interpolation `#{$var}` to create
+// selector based on argument.
 @mixin hide-after($count) {
   &:nth-child(n + #{$count + 1}) {
     display: none;
@@ -295,11 +305,15 @@ body {
 }
 
 .hardfork-phone {
+  // Preprocessor: apply `fork-section-shell` mixin to give the hardfork
+  // phone card the shared max-width, margin and padding pattern.
   @include fork-section-shell(block);
 }
 
 .appfork-phone,
 .gearfork-phone {
+  // Preprocessor: reuse `fork-section-shell` to set default hidden state
+  // and consistent margins; we pass `none` to hide by default.
   @include fork-section-shell(none);
 }
 
@@ -519,6 +533,8 @@ hr {
 // Sass nesting: Latest News owns its heading and responsive grid rules.
 .latest-news {
   display: block;
+  // Preprocessor: using `content-section` mixin to apply max-width,
+  // centering, and horizontal padding for this section.
   @include content-section($section-space);
 
   h1 {
@@ -529,6 +545,8 @@ hr {
     line-height: 1;
 
     i {
+      // Preprocessor: `title-icon` mixin applies small spacing and
+      // vertical alignment for icon elements next to headings.
       @include title-icon;
     }
   }
@@ -543,6 +561,8 @@ hr {
 }
 
 .latest-news-grid {
+  // Preprocessor: `responsive-card-grid` mixin sets up a grid with
+  // a parameterized column count so we can adjust per breakpoint.
   @include responsive-card-grid(1);
 
   @include respond(768px) {
@@ -582,6 +602,8 @@ hr {
 
 // Sass nesting: funding section groups its panel, heading, links, and card variants.
 .funding-section {
+  // Preprocessor: reuse `content-section` mixin to keep this section
+  // aligned with the site's content width and padding.
   @include content-section(0);
 
   @include respond(1024px) {
@@ -606,10 +628,15 @@ hr {
   background: linear-gradient(180deg, #f7f7f7 0, $white 58px);
   border-bottom: 3px solid $panel-border;
 
+  // Preprocessor: `respond` mixin scopes breakpoint rules to this
+  // component, keeping media queries colocated with the styles they
+  // affect.
   @include respond(768px) {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
+  // Preprocessor: another `respond` usage to adapt the panel layout
+  // at larger breakpoints.
   @include respond(1024px) {
     grid-template-columns: repeat(4, minmax(0, 1fr));
     gap: 24px;
@@ -630,10 +657,14 @@ hr {
     line-height: 1.15;
 
     i {
+      // Preprocessor: `title-icon` mixin used with an argument to
+      // tweak spacing specifically for funding heading icons.
       @include title-icon(8px);
     }
   }
 
+  // Preprocessor: `respond` keeps breakpoint rules nested inside the
+  // component rather than scattered at the end of the file.
   @include respond(768px) {
     grid-column: 1/-1;
   }
@@ -663,6 +694,8 @@ hr {
     color: $tnw-red;
   }
 
+  // Preprocessor: nesting used here so `a` and its `:hover` state are
+  // authored together, improving locality and readability.
   a {
     color: $tnw-red;
     font-size: 18px;
@@ -675,12 +708,17 @@ hr {
   }
 
   @include respond(768px) {
+    // Preprocessor: increase link size at tablet breakpoint using the
+    // `respond` mixin so the rule stays beside the `funding-links`
+    // component.
     a {
       font-size: 16px;
     }
   }
 
   @include respond(1024px) {
+    // Preprocessor: layout tweak at desktop breakpoint for the link
+    // row; kept here with `respond` for locality.
     justify-content: flex-end;
     flex: 1 1 auto;
   }
@@ -714,6 +752,9 @@ hr {
     line-height: 1.2;
   }
 
+  // Preprocessor: responsive adjustments for the card header using the
+  // `respond` mixin so these rules are colocated with the header
+  // component.
   @include respond(768px) {
     padding-left: 82px;
 
@@ -735,6 +776,8 @@ hr {
   color: $white;
   overflow: hidden;
 
+  // Preprocessor: adjust company logo size at a breakpoint using
+  // `respond` so responsive rules live near the component.
   @include respond(768px) {
     width: 58px;
     height: 58px;
@@ -769,6 +812,8 @@ hr {
 }
 
 .klook-logo {
+  // Preprocessor: `center-flex` mixin centers inline content using
+  // flexbox. Reused here for consistency across small logo blocks.
   @include center-flex;
   background: $white;
   color: $tnw-red;
@@ -777,6 +822,8 @@ hr {
 }
 
 .wolt-logo {
+  // Preprocessor: another reuse of `center-flex` to align text and
+  // iconography inside the Wolt logo tile.
   @include center-flex;
   background: #21b9db;
   color: $white;
@@ -807,6 +854,8 @@ hr {
     letter-spacing: 0.03em;
   }
 
+  // Preprocessor: responsive padding adjustment inside the funding
+  // amount block using the `respond` mixin.
   @include respond(768px) {
     padding-left: 82px;
   }

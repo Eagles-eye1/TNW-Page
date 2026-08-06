@@ -4,7 +4,9 @@
   "description": "A responsive static landing page inspired by The Next Web (TNW). The project recreates a news-style homepage experience with mobile and desktop navigation, featured story cards, a latest funding section, and a branded footer.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass SCSS/styles.scss styles.css",
+    "sass:watch": "sass --watch SCSS/styles.scss styles.css"
   },
   "repository": {
     "type": "git",
