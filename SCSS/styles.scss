@@ -29,7 +29,7 @@ $story-overlay: linear-gradient(
 );
 // Sass map: stores related card image data in one place.
 // Preprocessor feature: `map` — a key/value collection used below
-// so we can loop and generate classes programmatically.
+// to loop and generate classes programmatically.
 $fork-feature-images: (
   hardfork1: "Image/GameStop.jpg",
   appfork1: "Image/googlemap.jpg",
@@ -146,13 +146,6 @@ $fork-feature-images: (
   padding: 0;
 }
 
-/* -----------------------------
-   Core reset using variables
-   -----------------------------
-   This top-level block uses the `$font-main` variable so the site's
-   typography can be changed in one place. It demonstrates a simple
-   design-token variable.
-*/
 * {
   margin: 0;
   padding: 0;
@@ -170,9 +163,7 @@ body {
   flex-direction: column;
 }
 
-// Nav section
-// Purpose: contains the small-screen navigation layout. We use nesting
-// to keep nav-related pseudo/selectors close to the `.nav1` block.
+// use nesting to keep nav-related pseudo/selectors close to the `.nav1` block.
 
 .nav-logo {
   display: flex;

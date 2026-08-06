@@ -1,10 +1,3 @@
-/* -----------------------------
-   Core reset using variables
-   -----------------------------
-   This top-level block uses the `$font-main` variable so the site's
-   typography can be changed in one place. It demonstrates a simple
-   design-token variable.
-*/
 * {
   margin: 0;
   padding: 0;
