@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320" role="img" aria-label="Government electric vehicle charging">
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1">
+      <stop offset="0" stop-color="#253039"/>
+      <stop offset="1" stop-color="#d4d8da"/>
+    </linearGradient>
+  </defs>
+  <rect width="640" height="320" fill="url(#bg)"/>
+  <rect x="0" y="203" width="640" height="117" fill="#6b7074"/>
+  <rect x="74" y="92" width="38" height="148" rx="6" fill="#b6e43c"/>
+  <rect x="83" y="112" width="20" height="41" rx="4" fill="#2f3840"/>
+  <path d="M104 153 C170 150 166 203 231 209" fill="none" stroke="#1a1f23" stroke-width="8"/>
+  <g transform="translate(210 146)">
+    <path d="M16 56 C38 22 83 5 159 10 C205 14 236 31 253 64 L239 83 L27 84Z" fill="#ec402f"/>
+    <path d="M92 17 L149 18 C184 20 206 34 221 58 L67 56Z" fill="#d8edf5"/>
+    <rect x="0" y="66" width="270" height="28" rx="8" fill="#c12d24"/>
+    <circle cx="68" cy="91" r="24" fill="#151515"/><circle cx="211" cy="91" r="24" fill="#151515"/>
+    <circle cx="68" cy="91" r="10" fill="#8f969a"/><circle cx="211" cy="91" r="10" fill="#8f969a"/>
+  </g>
+  <g transform="translate(345 54)">
+    <circle cx="36" cy="36" r="30" fill="#f0c39d"/>
+    <path d="M7 88 C22 65 52 62 69 88 L84 174 L-8 174Z" fill="#eef1f2"/>
+    <path d="M13 34 C18 5 52 -3 67 23 C48 16 31 19 13 34Z" fill="#dfd2bd"/>
+  </g>
+</svg>
