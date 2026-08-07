@@ -4,6 +4,25 @@ A responsive static landing page inspired by The Next Web (TNW). The project rec
 
 [View the live site](https://eagles-eye1.github.io/TNW-Page/)
 
+## LESS workflow
+
+The stylesheet source is `styles.less`. It is compiled into `styles.css`, which
+is the file loaded by `index.html`.
+
+```bash
+npm install
+npm run build:css
+```
+
+Use `npm run watch:css` while styling to rebuild the CSS whenever the LESS
+source changes.
+
+The refactor demonstrates variables for shared colors, widths, and responsive
+breakpoints; nesting for component children, hover states, and component-local
+media queries; and mixins for shared content widths, section headings, and flex
+centering. It also uses the `darken()` color function to derive the brand hover
+color.
+
 ## Overview
 
 TNW Site is built with plain HTML and CSS. It focuses on responsive layout, visual hierarchy, image-led story cards, and a funding-round section modeled after TNW-style editorial pages.

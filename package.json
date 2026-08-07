@@ -1,0 +1,24 @@
+{
+  "name": "tnw-site",
+  "version": "1.0.0",
+  "description": "A responsive static landing page inspired by The Next Web (TNW). The project recreates a news-style homepage experience with mobile and desktop navigation, featured story cards, a latest funding section, and a branded footer.",
+  "main": "index.js",
+  "scripts": {
+    "build:css": "lessc styles.less styles.css",
+    "watch:css": "lessc --watch styles.less styles.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Eagles-eye1/TNW-Page.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Eagles-eye1/TNW-Page/issues"
+  },
+  "homepage": "https://github.com/Eagles-eye1/TNW-Page#readme",
+  "devDependencies": {
+    "less": "^4.8.1"
+  }
+}
